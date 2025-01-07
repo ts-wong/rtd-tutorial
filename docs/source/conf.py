@@ -1,5 +1,11 @@
 # Configuration file for the Sphinx documentation builder.
 
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here.
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 # -- Project information
 
 project = 'Lumache'
